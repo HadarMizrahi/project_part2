@@ -38,9 +38,9 @@ pipeline {
                 bat 'python combined_testing.py'
             }
         }
-        stage('Run clean environemnt') {
+        stage('Run clean environment') {
             steps {
-                bat 'python clean_environemnt.py'
+                bat 'python clean_environment.py'
             }
         }
     }
