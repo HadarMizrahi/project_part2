@@ -23,6 +23,11 @@ pipeline {
                 bat 'start /min python web_app.py'
             }
         }
+        stage('Run functions backend testing') {
+            steps {
+                bat 'python function_backend_testing.py'
+            }
+        }
         stage('Run backend testing') {
             steps {
                 bat 'python backend_testing.py'
