@@ -13,6 +13,13 @@ pipeline {
                 git 'https://github.com/HadarMizrahi/project_part2.git'
             }
         }
+        stage ('Install ') {
+            steps {
+	            script {
+                    sh 'python3 -m pip install --upgrade pip'
+            	}
+	         }
+        }
         stage('Run backend server') {
             steps {
                 bat 'start /min python rest_app.py'
