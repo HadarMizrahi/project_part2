@@ -15,10 +15,10 @@ pipeline {
         }
         stage ('Install ') {
             steps {
-	            script {
-                    sh 'python3 -m pip install --upgrade pip'
+	        script {
+                	sh 'python3 -m pip install --upgrade pip'
             	}
-	         }
+	    }
         }
         stage('Run backend server') {
             steps {
