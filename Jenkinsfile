@@ -16,7 +16,7 @@ pipeline {
         stage ('Install ') {
             steps {
 	        script {
-                	sh 'python3 -m pip install --upgrade requests'
+                	sh 'py -m pip install --upgrade pip'
             	}
 	    }
         }
